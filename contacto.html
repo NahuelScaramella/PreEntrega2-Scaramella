@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" href="C:\Users\dell\Desktop\Desarrollo-Web\img\favicon-padel.png" type="png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <h1>FLORIDA PADEL ®</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li class="dropdown">
+                        <a href="productos.html" class="dropbtn">PRODUCTOS</a>
+                        <div class="dropdown-content">
+                            <a href="productos.html#Paletas">Paletas</a>
+                            <a href="productos.html#Accesorios">Accesorios</a>
+                            <a href="productos.html#Calzado">Calzado</a>
+                        </div>
+                    </li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="novedades.html">NOVEDADES</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <h3>Contacto y consultas</h3>
+        <h4>Dejá tu consulta y será respondida a la brevedad por uno de nuestros representantes.</h4>
+            <section>
+                <form action="procesar_formulario.php" method="POST" class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="Número de celular con código de área" required>
+                    <label for="mail">Mail:</label>
+                    <input type="email" id="mail" name="mail" placeholder="Ingresá tu mail" required>
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" placeholder="Escribí acá tu consulta" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+    </main>
+    <footer class="footer-content">
+        <div class="newsletter">
+            <form action="tu_script_de_procesamiento.php" method="post">
+                <label for="email">Suscribite al newsletter:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu mail" required>
+                <input type="submit" value="Suscribirse">
+            </form>
+        </div>
+        <div class="info-contacto">
+            <p>Contacto: padel@florida.com</p>
+            <p>Tel: 11-1111-1111</p>
+            <p>WhatsApp: <a href="https://wa.me/+5491111111111">Enviar mensaje.</a></p>
+            <p>&copy; 2023 Florida Padel. Todos los derechos reservados.</p>
+        </div>
+        <div>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com" target="_blank"><img src="C:\Users\dell\Desktop\Desarrollo-Web\img\fb-logo.png" alt="Facebook"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="C:\Users\dell\Desktop\Desarrollo-Web\img\ig-logo.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
